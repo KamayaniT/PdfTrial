@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <tr>
+      <th>Students Name</th>
+      <th>{{date}}</th>
+    </tr>
+    <!-- <ion-item *ngFor="let item of attList | keyvalue">{{item.key}}:{{item.value}}</ion-item> -->
+    <tr *ngFor="let x of attList | keyvalue">
+      <td>{{x.key}}</td>
+      <td *ngFor="let data of x.value">{{data}}</td>
+   </tr>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ChessClub",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
